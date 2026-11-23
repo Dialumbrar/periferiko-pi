@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PerifériKo Admin - Catálogo de Peças</title>
+  <link rel="icon" type="image/jpeg" href="img/logo_periferiko.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand-header">
+      <img src="img/logo_periferiko.jpg" alt="Logo PerifériKo" class="logo-img">
+      <div class="logo">Periféri<span>Ko</span> <small>ADMIN</small></div>
+    </div>
+    <nav>
+      <a href="lista.html" class="active">Catálogo de Peças</a>
+      <a href="cadastro.html">Novo Componente</a>
+      <a href="index.html" id="btn-sair">Sair</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div class="top-bar">
+        <div>
+          <h2>Componentes Modulares</h2>
+          <p class="subtitle" style="margin-bottom: 0;">Peças disponíveis para o Builder de Teclados, Mouses e Controles</p>
+        </div>
+        <a href="cadastro.html" class="btn btn-primary btn-sm">+ Cadastrar Peça</a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome da Peça</th>
+            <th>Periférico / Categoria</th>
+            <th>Preço (R$)</th>
+            <th>Estoque</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-pecas">
+          <!-- Renderizado via JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
